@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bitz/__init__.py
+src/bitz/transformations.py
+src/bitz.egg-info/PKG-INFO
+src/bitz.egg-info/SOURCES.txt
+src/bitz.egg-info/dependency_links.txt
+src/bitz.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+bitz/__init__.py
+bitz/transformations.py
+bitz.egg-info/PKG-INFO
+bitz.egg-info/SOURCES.txt
+bitz.egg-info/dependency_links.txt
+bitz.egg-info/top_level.txt

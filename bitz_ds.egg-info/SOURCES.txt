@@ -1,9 +1,0 @@
-LICENSE
-README.md
-setup.py
-bitz-ds/__init__.py
-bitz-ds/transformations.py
-bitz_ds.egg-info/PKG-INFO
-bitz_ds.egg-info/SOURCES.txt
-bitz_ds.egg-info/dependency_links.txt
-bitz_ds.egg-info/top_level.txt

@@ -1,1 +1,1 @@
-from bitz.transformations import RFVClassificatior
+from bitz.transformations import RFVClassificator

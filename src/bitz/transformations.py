@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-class RFVClassificatior:
+class RFVClassificator:
     
     
     def __init__(self, accounts=None):

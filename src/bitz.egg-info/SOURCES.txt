@@ -2,6 +2,7 @@ LICENSE
 README.md
 pyproject.toml
 setup.cfg
+setup.py
 src/bitz/__init__.py
 src/bitz/transformations.py
 src/bitz.egg-info/PKG-INFO

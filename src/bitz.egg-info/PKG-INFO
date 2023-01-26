@@ -1,11 +1,13 @@
 Metadata-Version: 2.1
 Name: bitz
-Version: 0.0.3
+Version: 0.0.4
 Summary: Utilities for Bitz Analytics
 Home-page: https://github.com/viktor-ermakov/bitz
 Author: Viktor Ermakov
 Author-email: victor.ermakov@gmail.com
+License: UNKNOWN
 Project-URL: Bug Tracker, https://github.com/viktor-ermakov/bitz
+Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
@@ -14,3 +16,5 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 
 # bitz
+
+

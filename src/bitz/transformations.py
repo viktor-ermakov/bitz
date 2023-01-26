@@ -1,6 +1,7 @@
 import pyspark.pandas as ps
 import pandas as pd
 import numpy as np
+from datetime import date
 
 
 class RFVClassificator:
@@ -127,3 +128,19 @@ class RFVClassificator:
             
             return self.rfv_data[['aid','r','f','v','rfv','group']], self.rfv_group_summary
         
+    def persist(self):
+
+        self.rfv_data[["aid", "r", "f", "v", "rfv", "group"]].to_table("rfv.rfv")
+        self.rfv_data[["aid", "r", "f", "v", "rfv", "group"]].to_table(
+            "rfv.rfv_" + str(date.today()).replace("-", "_")
+        )
+        self.rfv_data[["aid", "r", "f", "v", "rfv", "group"]].to_table("rfv.rfv_data")
+        self.rfv_data[["aid", "r", "f", "v", "rfv", "group"]].to_table(
+            "rfv.rfv_data_" + str(date.today()).replace("-", "_")
+        )
+        ps.from_pandas(self.rfv_group_summary).to_table("rfv.rfv_group_summary")
+        ps.from_pandas(self.rfv_group_summary).to_table(
+            "rfv.rfv_group_summary_" + str(date.today()).replace("-", "_")
+        )
+    
+        print("RFV results saved sucessfully!")

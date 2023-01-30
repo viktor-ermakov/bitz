@@ -4,7 +4,7 @@ pyproject.toml
 setup.cfg
 setup.py
 src/bitz/__init__.py
-src/bitz/transformations.py
+src/bitz/classifications.py
 src/bitz.egg-info/PKG-INFO
 src/bitz.egg-info/SOURCES.txt
 src/bitz.egg-info/dependency_links.txt

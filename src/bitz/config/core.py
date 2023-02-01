@@ -8,7 +8,6 @@ import bitz
 
 # Project Directories
 PACKAGE_ROOT = Path(bitz.__file__).resolve().parent
-ROOT = PACKAGE_ROOT.parent.parent
 CONFIG_FILE_PATH = PACKAGE_ROOT / "config.yml"
 
 

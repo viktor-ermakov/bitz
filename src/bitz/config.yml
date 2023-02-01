@@ -1,0 +1,17 @@
+# Package Overview
+package_name: bitz
+
+
+# RFVClassificator parameters:
+
+group_order:
+  - stucked
+  - hibernated
+  - bonus hunter
+  - sleepy, unengaged
+  - sleepy, median
+  - sleepy, high
+  - awaken, unengaged
+  - awaken, median
+  - awaken, high
+  - Hero!

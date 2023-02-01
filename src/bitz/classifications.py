@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 from datetime import date
 
+from bitz.config.core import config
+
 
 class RFVClassificator:
     
@@ -15,7 +17,7 @@ class RFVClassificator:
         else:
             self.accounts = accounts
         
-        self.group_order = ['stucked', 'hibernated', 'bonus hunter', 'sleepy, unengaged', 'sleepy, median', 'sleepy, high', 'awaken, unengaged', 'awaken, median', 'awaken, high', 'Hero!']
+        self.group_order = config.RFVClassificator_config.group_order
         self._fit = False
         
         

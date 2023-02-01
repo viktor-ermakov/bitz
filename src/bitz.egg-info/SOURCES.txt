@@ -9,3 +9,5 @@ src/bitz.egg-info/PKG-INFO
 src/bitz.egg-info/SOURCES.txt
 src/bitz.egg-info/dependency_links.txt
 src/bitz.egg-info/top_level.txt
+src/bitz/config/__init__.py
+src/bitz/config/core.py

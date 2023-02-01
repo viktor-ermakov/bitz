@@ -1,0 +1,14 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./src/bitz/*
+
+include ./src/bitz/VERSION
+include ./src/bitz/config.yml
+
+include requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

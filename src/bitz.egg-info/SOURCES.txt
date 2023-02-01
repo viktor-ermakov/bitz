@@ -1,8 +1,11 @@
 LICENSE
+MANIFEST.in
 README.md
 pyproject.toml
-setup.cfg
+requirements.txt
 setup.py
+./src/bitz/VERSION
+./src/bitz/config.yml
 src/bitz/__init__.py
 src/bitz/classifications.py
 src/bitz.egg-info/PKG-INFO

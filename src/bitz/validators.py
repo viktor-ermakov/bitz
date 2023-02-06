@@ -1,7 +1,7 @@
 from pydantic import BaseModel, validator
 from pyspark.pandas import DataFrame
 
-from bitz import config
+from bitz import configfrom bitz.config.core import config
 
 
 class TransactionsValidator(BaseModel):

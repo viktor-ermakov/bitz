@@ -4,7 +4,7 @@ import numpy as np
 from datetime import date
 
 from bitz.config.core import config
-from bitz.validator import TransactionsValidator
+from bitz.validators import TransactionsValidator
 
 
 class RFVClassificator:

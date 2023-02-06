@@ -10,13 +10,9 @@ from bitz.validators import TransactionsValidator
 class RFVClassificator:
     
     
-    def __init__(self, accounts=None):
+    def __init__(self, accounts):
         
-        if accounts==None:
-            accounts_query = 'select cast(idConta as int) as aid, cast(dt_ativacao as date) as adate from trusted.mysql_contas where IdConta NOT IN (4,5,7,8,9,67,179,183) and status_conta = "Apta" and dt_ativacao < dateadd(day, -1, now()) order by aid'
-            self.accounts = ps.sql(accounts_query).astype({'adate':'datetime64[ns]'})
-        else:
-            self.accounts = accounts
+        self.accounts_full = accounts
         
         self.group_order = config.RFVClassificator_config.group_order
         self.mapper = ps.DataFrame(config.RFVClassificator_config.mapper.items(), columns=['rfvrfv_concat', 'group'])
@@ -28,9 +24,8 @@ class RFVClassificator:
         self.transactions = TransactionsValidator(transactions=X).transactions
         self.transactions['value'] = self.transactions['value'].abs()
         
-        stacked_query = 'select cast(idConta as int) as aid from trusted.mysql_contas where idConta NOT IN (4,5,7,8,9,67,179,183) and status_conta = "Não Apta"'
-        
-        self.stacked = ps.sql(stacked_query)
+        self.stacked = self.accounts_full[['aid']][~self.accounts_full['status']]
+        self.accounts = self.accounts_full[['aid','adate']][self.accounts_full['status']]
         
         # 'Hybernated' - active accounts that have no transactions
         self.hibernated = ps.concat([self.accounts[['aid']],self.transactions[['aid']]]).drop_duplicates(keep=False) 

@@ -10,7 +10,7 @@ class TransactionsValidator(BaseModel):
     @validator('transactions')
     @classmethod
     def transactions_validator(cls, value):
-        if not all(transactions.columns.isin(config.RFVClassificator_config.transactions_columns)):
+        if not all(value.columns.isin(config.RFVClassificator_config.transactions_columns)):
             raise ValueError('"transactions" must have columns "aid", "tdate", "value", "ttype"')
         elif value['aid'].dtype != 'int32':
             raise ValueError('Column "aid" must be of type "int32"')

@@ -1,24 +1,4 @@
 # Databricks notebook source
-email_message = """\
-message:
-  date: 2022-01-16 12:46:17Z
-  from: john.doe@domain.com
-  to:
-    - bobby@domain.com
-    - molly@domain.com
-  cc:
-    - jane.doe@domain.com
-  subject: Friendly reminder
-  content: |
-    Dear XYZ,
-
-    Lorem ipsum dolor sit amet...
-  attachments:
-    image1.gif: !!binary
-        R0lGODdhCAAIAPAAAAIGAfr4+SwAA
-        AAACAAIAAACDIyPeWCsClxDMsZ3CgA7
-"""
-
 import yaml
 
 with open('./config.yml', "r") as conf_file:
@@ -30,8 +10,13 @@ from typing import Dict, List, Sequence
 class MyModel(BaseModel):
     package_name: str
     group_order: List[str]
+    mapper: Dict[int,str]
     
 my_vars = MyModel(**parsed_config)
+
+# COMMAND ----------
+
+my_vars.mapper
 
 # COMMAND ----------
 

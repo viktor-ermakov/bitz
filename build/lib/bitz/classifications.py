@@ -146,4 +146,4 @@ class RFVClassificator:
             "rfv.rfv_group_summary_" + str(date.today()).replace("-", "_")
         )
     
-        print("RFV results saved sucessfully!")transactions=
+        print("RFV results saved sucessfully!")

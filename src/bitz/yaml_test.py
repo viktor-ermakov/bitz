@@ -16,7 +16,9 @@ my_vars = MyModel(**parsed_config)
 
 # COMMAND ----------
 
-my_vars.mapper
+import pyspark.pandas as ps
+
+ps.DataFrame(my_vars.mapper.items(), columns=['rfvrfv_concat', 'group'])
 
 # COMMAND ----------
 

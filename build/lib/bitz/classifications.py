@@ -19,7 +19,7 @@ class RFVClassificator:
             self.accounts = accounts
         
         self.group_order = config.RFVClassificator_config.group_order
-        self.mapper = ps.DataFrame(config.RFVClassificator_config.mapper, columns=['rfvrfv_concat', 'group'])
+        self.mapper = ps.DataFrame(config.RFVClassificator_config.mapper.items(), columns=['rfvrfv_concat', 'group'])
         self._fit = False
         
         

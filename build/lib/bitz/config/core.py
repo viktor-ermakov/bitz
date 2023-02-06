@@ -24,6 +24,7 @@ class RFVClassificatorConfig(BaseModel):
     """
     transactions_columns: List[str]
     group_order: List[str]
+    mapper: Dict[int:str]
 
 
 class Config(BaseModel):

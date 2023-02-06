@@ -19,6 +19,7 @@ class RFVClassificator:
             self.accounts = accounts
         
         self.group_order = config.RFVClassificator_config.group_order
+        self.mapper = ps.DataFrame(config.RFVClassificator_config.mapper)
         self._fit = False
         
         
@@ -55,7 +56,7 @@ class RFVClassificator:
         return None
         
         
-    def transform(self, mapper, X=None):
+    def transform(self, X=None):
         
         if self._fit:
             self.quantiles={}
@@ -77,7 +78,7 @@ class RFVClassificator:
             
             self.rfv_data['rfvrfv_concat'] = self.rfv_data['r'].astype(str) + self.rfv_data['f'].astype(str) + self.rfv_data['v'].astype(str) + self.rfv_data['rfv'].astype(str)
             
-            self.rfv_data = self.rfv_data.merge(mapper, on='rfvrfv_concat', how='left')\
+            self.rfv_data = self.rfv_data.merge(self.mapper, on='rfvrfv_concat', how='left')\
                 .drop('rfvrfv_concat', axis=1).sort_values('aid')
             
             ##--------------------------------------------------

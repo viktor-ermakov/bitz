@@ -21,3 +21,72 @@ group_order:
   - awaken, median
   - awaken, high
   - Hero!
+  
+mapper:
+  - 0: stucked
+  - 1: hibernated
+  - 2: bonus hunter
+  - 1113: sleepy, unengaged
+  - 1124: sleepy, unengaged
+  - 1135: sleepy, median
+  - 1146: sleepy, high
+  - 2114: sleepy, unengaged
+  - 2125: sleepy, unengaged
+  - 2136: sleepy, median
+  - 2147: sleepy, high
+  - 3115: sleepy, unengaged
+  - 3126: sleepy, unengaged
+  - 3137: sleepy, median
+  - 3148: sleepy, high
+  - 4116: awaken, unengaged
+  - 4127: awaken, unengaged
+  - 4138: awaken, median
+  - 4149: awaken, high
+  - 1214: sleepy, unengaged
+  - 1225: sleepy, unengaged
+  - 1236: sleepy, median
+  - 1247: sleepy, high
+  - 2215: sleepy, unengaged
+  - 2226: sleepy, unengaged
+  - 2237: sleepy, median
+  - 2248: sleepy, high
+  - 3216: sleepy, unengaged
+  - 3227: sleepy, unengaged
+  - 3238: sleepy, median
+  - 3249: sleepy, high
+  - 4217: awaken, unengaged
+  - 4228: awaken, unengaged
+  - 4239: awaken, median
+  - 42410: awaken, high
+  - 1315: sleepy, median
+  - 1326: sleepy, median
+  - 1337: sleepy, median
+  - 1348: sleepy, high
+  - 2316: sleepy, median
+  - 2327: sleepy, median
+  - 2338: sleepy, median
+  - 2349: sleepy, high
+  - 3317: sleepy, median
+  - 3328: sleepy, median
+  - 3339: sleepy, median
+  - 33410: sleepy, high
+  - 4318: awaken, median
+  - 4329: awaken, median
+  - 43310: awaken, median
+  - 43411: awaken, high
+  - 1416: sleepy, median
+  - 1427: sleepy, median
+  - 1438: sleepy, median
+  - 1449: sleepy, high
+  - 2417: sleepy, median
+  - 2428: sleepy, median
+  - 2439: sleepy, median
+  - 24410: sleepy, high
+  - 3418: sleepy, median
+  - 3429: sleepy, median
+  - 34310: sleepy, median
+  - 34411: sleepy, high
+  - 4419: awaken, median
+  - 44210: awaken, median
+  - 44311: awaken, median
+  - 44412: Hero!

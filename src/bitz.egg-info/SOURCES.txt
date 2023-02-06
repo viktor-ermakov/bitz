@@ -8,6 +8,7 @@ setup.py
 ./src/bitz/config.yml
 src/bitz/__init__.py
 src/bitz/classifications.py
+src/bitz/validator.py
 src/bitz.egg-info/PKG-INFO
 src/bitz.egg-info/SOURCES.txt
 src/bitz.egg-info/dependency_links.txt

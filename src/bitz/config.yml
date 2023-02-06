@@ -4,6 +4,12 @@ package_name: bitz
 
 # RFVClassificator parameters:
 
+transactions_columns:
+  - aid
+  - tdate
+  - value
+  - ttype
+
 group_order:
   - stucked
   - hibernated

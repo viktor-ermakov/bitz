@@ -4,6 +4,7 @@ import numpy as np
 from datetime import date
 
 from bitz.config.core import config
+from bitz.vadidator import TransactionsValidator
 
 
 class RFVClassificator:
@@ -23,7 +24,7 @@ class RFVClassificator:
         
     def fit(self, X, y = None):
         
-        self.transactions = X.copy()
+        self.transactions = TransactionsValidator(X)
         self.transactions['value'] = self.transactions['value'].abs()
         
         stacked_query = 'select cast(idConta as int) as aid from trusted.mysql_contas where idConta NOT IN (4,5,7,8,9,67,179,183) and status_conta = "Não Apta"'

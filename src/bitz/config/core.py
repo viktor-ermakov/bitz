@@ -22,6 +22,7 @@ class RFVClassificatorConfig(BaseModel):
     """
     All configuration relevant to RFVClassificator.
     """
+    transactions_columns: List[str]
     group_order: List[str]
 
 

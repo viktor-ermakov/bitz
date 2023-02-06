@@ -1,6 +1,7 @@
 import logging
 
 from bitz.config.core import PACKAGE_ROOT, config
+from bitz.validator import TransactionsValidator
 
 # It is strongly advised that you do not add any handlers other than
 # NullHandler to your library’s loggers. This is because the configuration

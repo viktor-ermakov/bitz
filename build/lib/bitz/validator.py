@@ -7,6 +7,9 @@ from bitz import config
 class TransactionsValidator(BaseModel):
     transactions: DataFrame
     
+    class Config:
+        arbitrary_types_allowed = True
+    
     @validator('transactions')
     @classmethod
     def transactions_validator(cls, value):
